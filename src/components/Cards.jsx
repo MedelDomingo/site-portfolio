@@ -13,8 +13,9 @@ const Cards = (props) => {
       tech: "HTML,CSS,React",
     },
     {
-      title: "(MERN) Places Application",
-      description: "Lorem ipsum dolor sit amet consectetur, Eveniet enim.",
+      title: "(MERN) Social Mapping Application",
+      description:
+        "An app where users can share places with images and location with other users",
       url: "/",
       tech: "React,MongoDB,Express.js,Node.js",
     },
