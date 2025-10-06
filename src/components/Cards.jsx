@@ -1,14 +1,17 @@
 import { Card } from "flowbite-react";
 import { InView } from "../../components/motion-primitives/in-view";
 
+import todoListapp from "../assets/images/portfolios/todo_list_app.jpg";
+
 import Button from "./Button";
 
 const Cards = (props) => {
   const cardDetails = [
     {
+      imgUrl: todoListapp,
       title: "To Do List",
       description:
-        "A simple, user-friendly Todo List application built with React JS.",
+        "A simple, user-friendly Todo List application built with React JS with CRUD operations.",
       url: "https://github.com/MedelDomingo/first-todo-list-app",
       tech: "HTML,CSS,React",
     },
@@ -32,6 +35,12 @@ const Cards = (props) => {
       key={`tech-${index}`}
     >
       <Card className="m-4">
+        <div
+          className="port-img__wrapper "
+          style={{
+            backgroundImage: item.imgUrl ? `url(${item.imgUrl})` : undefined,
+          }}
+        ></div>
         <h5 className="text-2xl tracking-tight text-gray-900 dark:text-white font-bold text-[16px] pb-1">
           {item.title}
         </h5>
