@@ -5,7 +5,7 @@ import WebsitePortfolio from "../components/WebsitePortfolio";
 export default function JobProjectManagerPage() {
   return (
     <MainLayout>
-      <div className="img-content-wrapper  border-gray-200 border-b-1 pb-10">
+      <div className="img-content-wrapper  border-gray-200 border-b-1 pb-10 px-4">
         <div className="content-container text-center md:text-left">
           <div className="header-wrapper mb-5">
             <h1 className="font-bold">Project Manager & Web Developer</h1>{" "}
@@ -38,11 +38,11 @@ export default function JobProjectManagerPage() {
       </div>
       <WebsitePortfolio
         sectionTitle="PH Projects"
-        workSamples="http://www.apofloors.com, https://www.bluehorizons.travel, https://asianeyeinstitute.com"
+        workSamples="apofloors.com, bluehorizons.travel, asianeyeinstitute.com"
       />
       <WebsitePortfolio
         sectionTitle="AU Projects"
-        workSamples="https://rawandrice.com.au, https://www.ucapital.com.au, https://woofersworld.com.au, https://datatools.com.au, https://aussieoutdoorliving.com.au, https://www.tfo.com.au, https://www.letsbemates.com.au, https://appleseedgardening.com.au, https://gunnebo.com.au, https://cbsfoodtech.com.au, https://motiv8sports.com.au, https://www.1300smiles.com.au"
+        workSamples="rawandrice.com.au, www.ucapital.com.au, woofersworld.com.au, datatools.com.au, aussieoutdoorliving.com.au, www.tfo.com.au, www.letsbemates.com.au, appleseedgardening.com.au, gunnebo.com.au, cbsfoodtech.com.au, motiv8sports.com.au, www.1300smiles.com.au"
       />
     </MainLayout>
   );

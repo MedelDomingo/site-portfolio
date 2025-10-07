@@ -1,0 +1,22 @@
+.port-img__wrapper {
+  height: 172px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 1px solid #fefefe;
+}
+
+.card__latest_project {
+  margin: 15px auto;
+  transition: ease all 0.5s;
+}
+.card__latest_projec:hover {
+  background-color: var(--color-gray-100);
+}
+@media (min-width: 768px) {
+  .card-section-works {
+    margin: 0 -7.5px;
+  }
+  .card__latest_project {
+    margin: 0 7.5px;
+  }
+}

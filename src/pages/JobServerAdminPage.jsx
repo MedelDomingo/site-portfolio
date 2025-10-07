@@ -4,7 +4,7 @@ import MainLayout from "../layout/MainLayout";
 export default function JobServerAdminPage() {
   return (
     <MainLayout>
-      <div className="img-content-wrapper  border-gray-200 border-b-1 pb-10">
+      <div className="img-content-wrapper  border-gray-200 border-b-1 pb-10 px-4">
         <div className="content-container text-center md:text-left">
           <div className="header-wrapper mb-5">
             <h1 className="font-bold">Server Administrator</h1>{" "}

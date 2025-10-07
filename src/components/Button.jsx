@@ -7,7 +7,11 @@ const Button = (props) => {
       <div className={`main-btn__wrapper ${props.className}`}>
         <ul className="mt-2">
           <li>
-            <a href={props.gitLink} target="blank" className="max-w-[24px]">
+            <a
+              href={props.gitLink}
+              target="blank"
+              className="max-w-[24px] inline-block"
+            >
               <svg
                 className="w-6 h-6 text-gray-800 dark:text-white"
                 aria-hidden="true"

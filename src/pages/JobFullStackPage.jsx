@@ -2,12 +2,14 @@ import React from "react";
 import MainLayout from "../layout/MainLayout";
 import WebsitePortfolio from "../components/WebsitePortfolio";
 
+import gengoImg from "../assets/images/portfolios/gengo_img.jpg";
+
 import "../pages/Jobs.css";
 
 function JobFullStackPage() {
   return (
     <MainLayout>
-      <div className="img-content-wrapper border-gray-200 border-b-1 pb-10">
+      <div className="img-content-wrapper pb-10 px-4">
         <div className="content-container text-center md:text-left">
           <div className="header-wrapper mb-5">
             <h1 className="font-bold">Front End Engineer</h1>{" "}
@@ -45,8 +47,13 @@ function JobFullStackPage() {
         </div>
       </div>
       <WebsitePortfolio
+        portType="modal"
         sectionTitle="Sample Works"
+        portImg={gengoImg}
         workSamples="https://gengo.com/order/"
+        portName="Lionbridge Gengo Translation"
+        portDescription="Optimized for speed, Gengo helps you instantly connect your content with the right translator. The easy-to-use interface captures all essential information about your translation requirements to provide you with the right quality and hassle-free experience."
+        portShortDescription="Online, Self-service Translation Platform for Reliable Translations by Human Translators"
       />
     </MainLayout>
   );
