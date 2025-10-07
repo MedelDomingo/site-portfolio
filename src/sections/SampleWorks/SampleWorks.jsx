@@ -5,7 +5,7 @@ function SampleWorks() {
   return (
     <div
       id="sample-works-section"
-      className="py-4 md:py-12 md:max-w-[760px] m-auto md:px-4 border-gray-200 border-b-1"
+      className="py-4 px-2 md:px-0 md:py-12 md:max-w-[760px] m-auto md:px-4 border-gray-200 border-b-1"
     >
       <h2 className="text-[16px] font-bold text-center md:text-left">
         Latest Projects

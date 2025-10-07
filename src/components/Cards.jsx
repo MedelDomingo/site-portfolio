@@ -1,26 +1,28 @@
 import { Card } from "flowbite-react";
 import { InView } from "../../components/motion-primitives/in-view";
 
-import todoListapp from "../assets/images/portfolios/todo_list_app.jpg";
+import todoListappImg from "../assets/images/portfolios/todo_list_app.jpg";
 
 import Button from "./Button";
+
+import "./Card.css";
 
 const Cards = (props) => {
   const cardDetails = [
     {
-      imgUrl: todoListapp,
+      imgUrl: todoListappImg,
       title: "To Do List",
       description:
         "A simple, user-friendly Todo List application built with React JS with CRUD operations.",
       url: "https://github.com/MedelDomingo/first-todo-list-app",
-      tech: "HTML,CSS,React",
+      tech: "React JS,TaildwindCSS",
     },
     {
       title: "(MERN) Social Mapping Application",
       description:
         "An app where users can share places with images and location with other users",
-      url: "/",
-      tech: "React,MongoDB,Express.js,Node.js",
+      url: "https://github.com/MedelDomingo/social-mapping-app",
+      tech: "React JS,MongoDB,Express.js,Node.js",
     },
   ];
 
@@ -34,14 +36,14 @@ const Cards = (props) => {
       transition={{ duration: 0.3, ease: "easeInOut" }}
       key={`tech-${index}`}
     >
-      <Card className="m-4">
-        <div
-          className="port-img__wrapper "
-          style={{
-            backgroundImage: item.imgUrl ? `url(${item.imgUrl})` : undefined,
-          }}
-        ></div>
-        <h5 className="text-2xl tracking-tight text-gray-900 dark:text-white font-bold text-[16px] pb-1">
+      <Card
+        className="max-w-sm card__latest_project"
+        imgAlt="todo_list__img"
+        imgSrc={item.imgUrl}
+        href={item.url}
+        target="_blank"
+      >
+        <h5 className="text-2xl tracking-tight text-gray-900 dark:text-white font-bold text-[16px] pb-1 ">
           {item.title}
         </h5>
         <ul className="flex content-evenly">
