@@ -18,7 +18,7 @@ const Cards = (props) => {
       tech: "React JS,TaildwindCSS",
     },
     {
-      title: "(MERN) Social Mapping Application",
+      title: "Social Mapping Application - WIP",
       description:
         "An app where users can share places with images and location with other users",
       url: "https://github.com/MedelDomingo/social-mapping-app",
