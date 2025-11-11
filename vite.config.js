@@ -3,8 +3,18 @@ import react from "@vitejs/plugin-react";
 import tailwindcss from "@tailwindcss/vite";
 import flowbiteReact from "flowbite-react/plugin/vite";
 
-// https://vite.dev/config/
-export default defineConfig({
-  plugins: [react(), tailwindcss(), flowbiteReact()],
-  base: "/site-portfolio/",
+const repoName = "site-portfolio";
+
+export default defineConfig(({ mode }) => {
+  if (mode === "development") {
+    return {
+      plugins: [react(), tailwindcss(), flowbiteReact()],
+      base: "/",
+    };
+  }
+
+  return {
+    plugins: [react(), tailwindcss(), flowbiteReact()],
+    base: `/${repoName}/`,
+  };
 });
