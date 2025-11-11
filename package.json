@@ -1,13 +1,13 @@
 {
-  "homepage": "https://MedelDomingo/site-portfolio",
-  "name": "site-portfolio",
+  "homepage": "http://MedelDomingo.github.io/site-portfolio",
+  "name": "react-portfolio-app",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "lint": "eslint .",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "postinstall": "flowbite-react patch",
     "predeploy": "npm run build",
