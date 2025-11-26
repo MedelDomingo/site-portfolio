@@ -1,12 +1,17 @@
-import React from 'react'
-import NavItems from '../../components/NavItems';
+import React, { useState } from "react";
+import NavItems from "../../components/NavItems";
 
 function Header() {
-    return (
-        <div id="header-section">
-            <NavItems />
-        </div>
-    );
+  const [mode, setMode] = useState(false);
+
+  const handleClickMode = () => {
+    setMode(true);
+  };
+  return (
+    <div id="header-section">
+      <button onClick={handleClickMode}>Dark Mode</button>
+    </div>
+  );
 }
 
-export default Header
+export default Header;

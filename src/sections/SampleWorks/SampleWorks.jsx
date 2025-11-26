@@ -10,9 +10,7 @@ function SampleWorks() {
       <h2 className="text-[16px] font-bold text-center md:text-left">
         Latest Projects
       </h2>
-      <div className="card-section-works">
-        <Cards />
-      </div>
+      <Cards />
     </div>
   );
 }

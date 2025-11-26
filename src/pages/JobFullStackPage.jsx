@@ -12,25 +12,15 @@ function JobFullStackPage() {
       <div className="img-content-wrapper pb-10 px-4">
         <div className="content-container text-center md:text-left">
           <div className="header-wrapper mb-5">
-            <h1 className="font-bold">Front End Engineer</h1>{" "}
-            <span>2020 - 2025</span>
+            <h1 className="font-bold">Software Engineer (Front-End)</h1>
+            <span>2020 - Present</span>
           </div>
           <ul className="jobs-list-items">
             <li>
               Develop and implement custom ReactJS components to improve UI
               functionality and design.
             </li>
-            <li>
-              Enhance website UI by integrating ReactJS components with existing
-              WordPress-based systems.
-            </li>
-            <li>
-              Maintain and enhance the front-end of our web application using
-              ReactJS.
-            </li>
-            <li>
-              Conduct code reviews to ensure high-quality, maintainable code.
-            </li>
+            <li>Maintain and enhance the front-end of our web application</li>
             <li>
               Work closely with stakeholders to understand requirements and
               implement UI improvements.

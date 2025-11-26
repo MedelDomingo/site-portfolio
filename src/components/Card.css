@@ -6,17 +6,25 @@
 }
 
 .card__latest_project {
-  margin: 15px auto;
   transition: ease all 0.5s;
+  margin: unset;
 }
 .card__latest_projec:hover {
   background-color: var(--color-gray-100);
 }
+
+#card-section .carousel-nav {
+  display: none;
+}
+#card-section .carousel-item {
+  flex-basis: 100%;
+}
+
 @media (min-width: 768px) {
-  .card-section-works {
-    margin: 0 -7.5px;
+  #card-section .carousel-nav {
+    display: flex;
   }
-  .card__latest_project {
-    margin: 0 7.5px;
+  #card-section .carousel-item {
+    flex-basis: 50%;
   }
 }

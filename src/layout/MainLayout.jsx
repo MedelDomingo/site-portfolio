@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Footer from "../sections/Footer/Footer";
 import ContactMe from "../sections/ContactMe/ContactMe";
+import Header from "../sections/Header/Header";
 
 function MainLayout({ children }) {
   return (

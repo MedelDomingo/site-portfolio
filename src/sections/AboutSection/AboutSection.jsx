@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Jobs } from "../../components/Jobs";
 
 function AboutSection() {
   const experiences = [
@@ -20,7 +19,7 @@ function AboutSection() {
       url: "/job-2",
     },
     {
-      worktitle: "Front End Engineer",
+      worktitle: "Software Engineer (Front-End)",
       numberofyears: "2020 - Present",
       company: "Gengo Lionbridge",
       jobDetails:
@@ -34,12 +33,14 @@ function AboutSection() {
     .reverse()
     .map((item, index) => (
       <Link to={item.url} key={index}>
-        <div className="content-wrapper my-2 py-4 px-4 flex justify-between items-center border-1 border-gray-200 rounded-xl w-full rounded-[5px] bg-white p-4 dark:bg-zinc-950 hover:bg-gray-100 transition-all">
+        <div className="content-wrapper my-2 py-4 px-4 flex justify-between items-center border-1 dark:border-gray-200 border-gray-200 rounded-xl w-full rounded-[5px] bg-white p-4 dark:bg-zinc-800 hover:bg-gray-100 transition-all">
           <div className="title-company-wrapper">
-            <h2 className="text-[16px] font-bold">{item.worktitle}</h2>
-            <p className="text-[14px]">{item.company}</p>
+            <h2 className="text-[16px] font-bold dark:text-white">
+              {item.worktitle}
+            </h2>
+            <p className="text-[14px] dark:text-gray-400">{item.company}</p>
           </div>
-          <div className="year text-right">
+          <div className="year text-right dark:text-gray-400 text-[12px]">
             <p>{item.numberofyears}</p>
           </div>
         </div>
