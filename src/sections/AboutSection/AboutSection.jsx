@@ -35,12 +35,12 @@ function AboutSection() {
       <Link to={item.url} key={index}>
         <div className="content-wrapper my-2 py-4 px-4 flex justify-between items-center border-1 dark:border-gray-200 border-gray-200 rounded-xl w-full rounded-[5px] bg-white p-4 dark:bg-zinc-800 hover:bg-gray-100 transition-all">
           <div className="title-company-wrapper">
-            <h2 className="text-[16px] font-bold dark:text-white">
+            <h2 className="text-[16px] font-bold">
               {item.worktitle}
             </h2>
-            <p className="text-[14px] dark:text-gray-400">{item.company}</p>
+            <p className="text-[14px]">{item.company}</p>
           </div>
-          <div className="year text-right dark:text-gray-400 text-[12px]">
+          <div className="year text-right text-[12px]">
             <p>{item.numberofyears}</p>
           </div>
         </div>
