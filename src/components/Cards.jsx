@@ -36,31 +36,31 @@ const Cards = (props) => {
   ];
 
   const cardItems = cardDetails.map((item, index) => (
-      <Card
-        className="card__latest_project m-10"
-        imgAlt="todo_list__img"
-        href={item.url}
-        target="_blank"
-        key={index}
-      >
-        <h5 className="text-2xl tracking-tight text-gray-900 dark:text-white font-bold text-[16px] pb-1 ">
-          {item.title}
-        </h5>
-        <ul className="flex content-evenly">
-          {item.tech.split(",").map((techItem, techIndex) => (
-            <li key={techIndex} className="text-[12px]">
-              {techItem}
-              <span className="p-1">
-                {techIndex < item.tech.split(",").length - 1 && " | "}
-              </span>
-            </li>
-          ))}
-        </ul>
-        <p className="font-normal text-gray-700 dark:text-gray-400 text-xs">
-          {item.description}
-        </p>
-        <Button />
-      </Card>
+    <Card
+      className="card__latest_project m-10"
+      imgAlt="todo_list__img"
+      href={item.url}
+      target="_blank"
+      key={index}
+    >
+      <h5 className="text-2xl tracking-tight text-gray-900 dark:text-white font-bold text-[16px] pb-1 ">
+        {item.title}
+      </h5>
+      <ul className="flex content-evenly">
+        {item.tech.split(",").map((techItem, techIndex) => (
+          <li key={techIndex} className="text-[12px]">
+            {techItem}
+            <span className="p-1">
+              {techIndex < item.tech.split(",").length - 1 && " | "}
+            </span>
+          </li>
+        ))}
+      </ul>
+      <p className="font-normal text-gray-400 dark:text-gray-400 text-sm">
+        {item.description}
+      </p>
+      <Button />
+    </Card>
   ));
   return (
     <section id="card-section" className="card-wrapper m-auto mt-[15px] ">
