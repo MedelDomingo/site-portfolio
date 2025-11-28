@@ -12,19 +12,3 @@
 .card__latest_projec:hover {
   background-color: var(--color-gray-100);
 }
-
-#card-section .carousel-nav {
-  display: none;
-}
-#card-section .carousel-item {
-  flex-basis: 100%;
-}
-
-@media (min-width: 768px) {
-  #card-section .carousel-nav {
-    display: flex;
-  }
-  #card-section .carousel-item {
-    flex-basis: 50%;
-  }
-}

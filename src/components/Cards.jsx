@@ -1,12 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 
 import { Card } from "flowbite-react";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselNavigation,
-  CarouselItem,
-} from "../../components/motion-primitives/carousel";
 
 import todoListappImg from "../assets/images/portfolios/todo_list_app.jpg";
 import weatherAppImg from "../assets/images/portfolios/weather-app.jpg";
@@ -33,7 +27,7 @@ const Cards = (props) => {
       tech: "React JS, OpenWeather API",
     },
     {
-      title: "Social Mapping Application - WIP",
+      title: "Social Mapping Application (WIP)",
       description:
         "An app where users can share places with images and location with other users",
       url: "https://github.com/MedelDomingo/social-mapping-app",
@@ -42,17 +36,13 @@ const Cards = (props) => {
   ];
 
   const cardItems = cardDetails.map((item, index) => (
-    <CarouselItem key={index} className="carousel-item basis-1/2 pl-4">
       <Card
         className="card__latest_project m-10"
         imgAlt="todo_list__img"
         href={item.url}
         target="_blank"
+        key={index}
       >
-        <div
-          className="img-wrapper bg-center h-[167px] bg-no-repeat bg-cover"
-          style={{ backgroundImage: `url(${item.imgUrl})` }}
-        ></div>
         <h5 className="text-2xl tracking-tight text-gray-900 dark:text-white font-bold text-[16px] pb-1 ">
           {item.title}
         </h5>
@@ -66,22 +56,16 @@ const Cards = (props) => {
             </li>
           ))}
         </ul>
-        <p className="font-normal text-gray-700 dark:text-gray-400">
+        <p className="font-normal text-gray-700 dark:text-gray-400 text-xs">
           {item.description}
         </p>
         <Button />
       </Card>
-    </CarouselItem>
   ));
   return (
-    <section id="card-section" className="card-wrapper m-auto mt-[15px]">
-      <div className="relative w-full align-top">
-        <Carousel>
-          <CarouselContent className="-ml-4 items-stretch xs:w-[100%]">
-            {cardItems}
-          </CarouselContent>
-          <CarouselNavigation alwaysShow className="carousel-nav" />
-        </Carousel>
+    <section id="card-section" className="card-wrapper m-auto mt-[15px] ">
+      <div className="relative w-full align-top grid gap-[20px] md:grid-cols-2">
+        {cardItems}
       </div>
     </section>
   );
