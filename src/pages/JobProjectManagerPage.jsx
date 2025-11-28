@@ -9,7 +9,7 @@ export default function JobProjectManagerPage() {
         <div className="content-container text-center md:text-left">
           <div className="header-wrapper mb-5">
             <h1 className="font-bold">Project Manager & Web Developer</h1>{" "}
-            <span>2020 - 2025</span>
+            <span>2016 - 2020</span>
           </div>
           <ul className="jobs-list-items">
             <li>
