@@ -6,7 +6,7 @@ const BannerDetails = (props) => {
     <div className="banner-details-wrapper text-center md:text-left py-16 md:py-4 px-4 md:px-0">
       <h1 className="font-bold text-[16px] pb-4">{props.name}</h1>
       <bold>Front End Engineer</bold>
-      <p className="py-4 text-sm ">
+      <p className="py-4 ">
         A passionate Front End Web Developer with 10 years of experience in the
         IT industry, including 3 years specializing in building robust,
         user-focused web applications.

@@ -4,7 +4,7 @@ import "./index.css";
 import App from "./App.jsx";
 
 // Import HashRouter, Routes, and Route
-import { HashRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import JobFullStackPage from "./pages/JobFullStackPage.jsx";
 import JobProjectManagerPage from "./pages/JobProjectManagerPage.jsx";
@@ -13,15 +13,15 @@ import NotFoundPage from "./pages/NotFoundPage.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <HashRouter>
+    <BrowserRouter>
       <Routes>
         {/* Define your routes as components */}
         <Route path="/" element={<App />} />
-        <Route path="/job-1" element={<JobFullStackPage />} />
-        <Route path="/job-2" element={<JobProjectManagerPage />} />
-        <Route path="/job-3" element={<JobServerAdminPage />} />
+        <Route path="job-1" element={<JobFullStackPage />} />
+        <Route path="job-2" element={<JobProjectManagerPage />} />
+        <Route path="job-3" element={<JobServerAdminPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
-    </HashRouter>
+    </BrowserRouter>
   </StrictMode>
 );
