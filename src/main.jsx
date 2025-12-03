@@ -17,9 +17,9 @@ createRoot(document.getElementById("root")).render(
       <Routes>
         {/* Define your routes as components */}
         <Route path="/" element={<App />} />
-        <Route path="job-1" element={<JobFullStackPage />} />
-        <Route path="job-2" element={<JobProjectManagerPage />} />
-        <Route path="job-3" element={<JobServerAdminPage />} />
+        <Route path="/job-1" element={<JobFullStackPage />} />
+        <Route path="/job-2" element={<JobProjectManagerPage />} />
+        <Route path="/job-3" element={<JobServerAdminPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </BrowserRouter>

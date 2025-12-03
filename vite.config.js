@@ -15,6 +15,6 @@ export default defineConfig(({ mode }) => {
 
   return {
     plugins: [react(), tailwindcss(), flowbiteReact()],
-    base: `/${repoName}`,
+    base: `${repoName}`,
   };
 });
